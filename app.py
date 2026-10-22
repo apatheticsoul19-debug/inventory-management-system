@@ -2,19 +2,18 @@ import streamlit as st
 import mysql.connector
 import pandas as pd
 
-
-# Connect to MySQL Database
 def get_connection():
     return mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="idk@123",  # Replace with your MySQL root password
-        database="inventory_db"
+        host="mysql-3357b29d-apatheticsoul19-4ee9.aivencloud.com",
+        port=24161,        # e.g., 15234 (must be a number, not text)
+        user="avnadmin",
+        password="AVNS_hVR086svhLXqJ0oV6Sd",
+        database="defaultdb"
     )
 
 
 st.title("📦 Inventory and Stock Management System")
-st.sidebar.navigation if hasattr(st.sidebar, "navigation") else None
+
 menu = st.sidebar.selectbox("Navigation",
                             ["Dashboard & Low Stock", "Manage Products", "Suppliers", "Log Stock Transaction"])
 
