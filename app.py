@@ -7,7 +7,7 @@ def get_connection():
         host="mysql-3357b29d-apatheticsoul19-4ee9.a.aivencloud.com",
         port=24161,
         user="avnadmin",
-        password="AVNS_hVR086svhLXqJ0oV6Sd",
+        password="AVNS_hvR086svhLXqJOoV6Sd",
         database="defaultdb",
         ssl_verify_cert=False
     )
