@@ -5,10 +5,11 @@ import pandas as pd
 def get_connection():
     return mysql.connector.connect(
         host="mysql-3357b29d-apatheticsoul19-4ee9.a.aivencloud.com",
-        port=24161,        # e.g., 15234 (must be a number, not text)
+        port=24161,
         user="avnadmin",
         password="AVNS_hVR086svhLXqJ0oV6Sd",
-        database="defaultdb"
+        database="defaultdb",
+        ssl_verify_cert=False
     )
 
 
